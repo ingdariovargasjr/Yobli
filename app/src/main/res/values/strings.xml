@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Yobli</string>
+    <string name="facebook_app_id">309830333684554</string>
+    <string name="fb_login_protocol_scheme">fb309830333684554</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="agenda">Agenda</string>
+    <string name="pr_ximos_eventos">Próximos Eventos</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="mensajes">Mensajes</string>
+    <string name="explora">Explora</string>
+    <string name="para_mi">Para Mí</string>
+    <string name="yobers">Yobers</string>
+    <string name="iniciar_seseion_con_facebook">INICIAR SESIÓN CON FACEBOOK</string>
+    <string name="cerrar_sesion">CERRAR SESIÓN</string>
+    <string name="perfil_yober">PERFIL YOBER</string>
+    <string name="mis_m_todos_de_pago">Mis Métodos de Pago</string>
+    <string name="mis_direcciones">Mis direcciones</string>
+    <string name="editar_perfil">EDITAR PERFIL</string>
+    <string name="r_septiem_yobli_com">r.septiem@yobli.com</string>
+
+</resources>

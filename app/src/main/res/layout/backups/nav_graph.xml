@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Inicio">
+    <fragment
+        android:id="@+id/mail"
+        android:name="com.example.jobly.mail"
+        android:label="fragment_mail"
+        tools:layout="@layout/fragment_mail" >
+        <action
+            android:id="@+id/action_mail_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.example.jobly.PasswordFragment"
+        android:label="fragment_password"
+        tools:layout="@layout/fragment_password" >
+        <action
+            android:id="@+id/action_passwordFragment_to_confirmPasswordFragment"
+            app:destination="@id/confirmPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmPasswordFragment"
+        android:name="com.example.jobly.ConfirmPasswordFragment"
+        android:label="fragment_confirm_password"
+        tools:layout="@layout/fragment_confirm_password" >
+        <action
+            android:id="@+id/action_confirmPasswordFragment_to_aboutYouFragment"
+            app:destination="@id/aboutYouFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutYouFragment"
+        android:name="com.example.jobly.AboutYouFragment"
+        android:label="fragment_about_you"
+        tools:layout="@layout/fragment_about_you" >
+        <action
+            android:id="@+id/action_aboutYouFragment_to_photoFragment"
+            app:destination="@id/photoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.example.jobly.PhotoFragment"
+        android:label="fragment_photo"
+        tools:layout="@layout/fragment_photo" >
+        <action
+            android:id="@+id/action_photoFragment_to_phoneRegFragment"
+            app:destination="@id/phoneRegFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneRegFragment"
+        android:name="com.example.jobly.PhoneRegFragment"
+        android:label="fragment_phone_reg"
+        tools:layout="@layout/fragment_phone_reg" >
+        <action
+            android:id="@+id/action_phoneRegFragment_to_IDFragment"
+            app:destination="@id/IDFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/IDFragment"
+        android:name="com.example.jobly.IDFragment"
+        android:label="fragment_id"
+        tools:layout="@layout/fragment_id" >
+        <action
+            android:id="@+id/action_IDFragment_to_Explorar"
+            app:destination="@id/Explorar" />
+    </fragment>
+
+    <fragment android:id="@+id/Inicio"
+        android:name="com.example.jobly.IDFragment"
+        android:label="fragment_id"
+        tools:layout="@layout/activity_register"/>
+
+    <fragment android:id="@+id/Explorar"
+        android:name="com.example.jobly.IDFragment"
+        android:label="fragment_id"
+        tools:layout="@layout/fragment_explore"/>
+</navigation>
